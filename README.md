@@ -29,6 +29,7 @@ Essa é a estrutura de pastas que iremos adotar:
 <pre>
 /my-api
 |-- /assets
+|   |-- tables_structure.sql
 |-- /src
 |   |-- /controllers
 |   |   |-- base.controller.php
@@ -49,9 +50,9 @@ Essa é a estrutura de pastas que iremos adotar:
 |   |   |-- /utils
 |   |   |   |-- database.php
 |   |   |   |-- dotEnv.php
-|   |-- index.php
 |-- .env
 |-- .env-template
+|-- index.php
 </pre>
 </pre>
 
@@ -65,7 +66,6 @@ DB_PORT=3306
 DB_DATABASE=shop
 DB_USERNAME=root
 DB_PASSWORD=root
-PORT=3000
 </pre>
 
 para ler o arquivo .env, criei uma função usando a própria biblioteca interna de php
