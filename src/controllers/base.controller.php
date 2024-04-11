@@ -1,6 +1,7 @@
 <?php
-// Path: src/controllers/base.controller.php
-abstract class BaseController
+// src/controllers/base.controller.php
+require_once 'src/controllers/ibase.controller.php';
+abstract class BaseController implements IBaseController
 {
     protected $repository;
 

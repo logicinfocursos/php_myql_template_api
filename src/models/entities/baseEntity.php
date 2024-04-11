@@ -1,5 +1,5 @@
 <?php
-// Path: src/models/entities/baseEntity.php
+// src/models/entities/baseEntity.php
 class BaseEntity {
     protected $created_at;
     protected $created_by;

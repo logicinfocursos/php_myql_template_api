@@ -1,5 +1,5 @@
 <?php
-// Path: src/routes/router.php
+// src/routes/router.php
 require_once 'src/routes/product.route.php';
 require_once 'src/routes/category.route.php';
 

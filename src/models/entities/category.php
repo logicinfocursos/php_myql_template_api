@@ -1,5 +1,5 @@
 <?php
-// Path: src/models/entities/category.php
+// src/models/entities/category.php
 require_once 'src/mdels/entities/baseEntity.php';
 class Category extends BaseEntity {
     public $id;

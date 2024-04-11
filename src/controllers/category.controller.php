@@ -1,5 +1,5 @@
 <?php
-// Path: src/controllers/category.controller.php
+// src/controllers/category.controller.php
 require_once 'src/controllers/base.controller.php';
 
 class CategoryController extends BaseController

@@ -1,5 +1,5 @@
 <?php
-// Path: src/models/repositories/product.repository.php
+// src/models/repositories/product.repository.php
 require_once 'src/models/repositories/base.repository.php';
 
 

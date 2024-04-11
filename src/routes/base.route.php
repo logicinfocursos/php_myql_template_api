@@ -1,8 +1,8 @@
 <?php
-// Path: src/routes/base.route.php
-abstract class BaseRoute
+// src/routes/base.route.php - (created by: logicinfo.com.br/ael)
+require_once 'src/routes/ibase.route.php';	
+abstract class BaseRoute implements IBaseRoute
 {
-
     protected $controller;
 
     public function __construct($controller)

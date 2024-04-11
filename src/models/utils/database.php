@@ -1,5 +1,5 @@
 <?php
-// Path: src/models/utils/database.php
+// src/models/utils/database.php
 require_once 'src/models/utils/dotEnv.php';
 class Database {
     private static $instance;

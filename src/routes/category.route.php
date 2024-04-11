@@ -1,5 +1,5 @@
 <?php
-// Path: src/routes/category.route.php
+// src/routes/category.route.php
 require_once 'src/routes/base.route.php';
 require_once 'src/controllers/category.controller.php';
 require_once 'src/models/repositories/category.repository.php';

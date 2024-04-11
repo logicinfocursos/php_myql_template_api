@@ -1,5 +1,5 @@
 <?php
-// Path: src/models/utils/dotEnv.php
+// src/models/utils/dotEnv.php
 /* 
     Exemplo de uso:
     echo Dotenv::get('DB_HOST');

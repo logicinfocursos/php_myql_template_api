@@ -1,9 +1,10 @@
 <?php
-// Path: src/models/repositories/base.repository.php
+// src/models/repositories/base.repository.php
 require_once 'src/models/utils/database.php';
+require_once 'src/models/repositories/ibase.repository.php';
 
 
-abstract class BaseRepository
+abstract class BaseRepository implements IBaseRepository
 {
     protected $entity;
     protected $table;

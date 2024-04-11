@@ -1,5 +1,5 @@
 <?php
-// Path: src/models/entities/product.php
+// src/models/entities/product.php
 require_once 'src/mdels/entities/baseEntity.php';
 class Product extends BaseEntity {
     public $id;
