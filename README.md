@@ -68,10 +68,9 @@ DB_USERNAME=root
 DB_PASSWORD=root
 </pre>
 
-para ler o arquivo .env, criei uma função usando a própria biblioteca interna de php
+para ler o arquivo .env, criei uma função usando a própria biblioteca interna de php (src/models/utils/dotEnv.php)
 # baixar o projeto no github
-agora que todas as configurações do projeto foram realizadas, recomendo que baixo o código completo da nossa api no 
-[github](https://github.com/logicinfocursos/php_myql_template_api.git).
+aqui no [github](https://github.com/logicinfocursos/php_myql_template_api.git) você tem a sua disponsição o código completo.
 
 você pode optar por clonar o projeto ou baixar o arquivo .zip.
 

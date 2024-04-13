@@ -1,7 +1,8 @@
 <?php
-// src/models/repositories/base.repository.php
+// src/models/repositories/base.repository.php - (created by: logicinfo.com.br/ael)
 require_once 'src/models/utils/database.php';
 require_once 'src/models/repositories/ibase.repository.php';
+
 
 
 abstract class BaseRepository implements IBaseRepository
@@ -10,6 +11,8 @@ abstract class BaseRepository implements IBaseRepository
     protected $table;
     protected $db;
 
+
+    
     public function __construct($table)
     {
         // Cria a conexão com o banco de dados
@@ -19,13 +22,21 @@ abstract class BaseRepository implements IBaseRepository
     }
 
 
+
     public function getAll()
     {
-
         $query = "SELECT * FROM $this->table";
+     
+        $result = $this->fetchData($query);
 
-        return $this->fetchData($query);
+        if (count($result) == 0) {
+            throw new Exception('registro(s) não encontrado(s)');
+        }
+
+        return $result;
     }
+
+
 
     public function getById($id)
     {
@@ -34,16 +45,30 @@ abstract class BaseRepository implements IBaseRepository
 
         $result = $this->fetchData($query, $params);
 
-        return $result;
+        if (count($result) == 0) {
+            throw new Exception('registro não encontrado');
+        }
+
+        return $result[0];
     }
+
+
 
     public function getListByKey($key, $field)
     {
         $query = "SELECT * FROM $this->table WHERE $field = :key";
         $params = [':key' => $key];
 
-        return $this->fetchData($query, $params);
+        $result = $this->fetchData($query, $params);
+
+        if (count($result) == 0) {
+            throw new Exception('registro(s) não encontrado(s)');
+        }
+
+        return $result;
     }
+
+
 
     public function create($data)
     {
@@ -55,6 +80,8 @@ abstract class BaseRepository implements IBaseRepository
 
         return $this->getById($this->db->lastInsertId());
     }
+
+
 
     public function update($id, $data)
     {
@@ -76,6 +103,8 @@ abstract class BaseRepository implements IBaseRepository
         return $this->getById($id);
     }
 
+
+
     public function erase($id)
     {
         $query = "DELETE FROM $this->table WHERE id = :id";
@@ -84,6 +113,8 @@ abstract class BaseRepository implements IBaseRepository
 
         return $this->executeQuery($query, $params);
     }
+
+
 
     protected function fetchData($query, $params = [])
     {
@@ -100,6 +131,8 @@ abstract class BaseRepository implements IBaseRepository
             throw new PDOException('Error fetching data: ' . $e->getMessage());
         }
     }
+
+
 
     protected function executeQuery($query, $params = [])
     {

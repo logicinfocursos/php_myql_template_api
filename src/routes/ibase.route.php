@@ -2,7 +2,7 @@
 // src/routes/ibase.route.php  - (created by: logicinfo.com.br/ael)
 interface IBaseRoute
 {
-    public function __construct($controller);
+    public function __construct();
     public function getAll();
     public function getById($id);
     public function getListByKey($key, $field);

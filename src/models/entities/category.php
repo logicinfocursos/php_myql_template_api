@@ -1,6 +1,9 @@
 <?php
-// src/models/entities/category.php
+// src/models/entities/category.php - (created by: logicinfo.com.br/ael)
 require_once 'src/mdels/entities/baseEntity.php';
+
+
+
 class Category extends BaseEntity {
     public $id;
     public $name;

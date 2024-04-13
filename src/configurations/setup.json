@@ -1,0 +1,19 @@
+{
+    "routes":[
+        {
+            "url": "address",
+            "route": "AddressRoute",
+            "status": 1
+        },
+        {
+            "url": "category",
+            "route": "CategoryRoute",
+            "status": 1
+        },
+        {
+            "url": "product",
+            "route": "ProductRoute",
+            "status": 1
+        }
+    ]
+}

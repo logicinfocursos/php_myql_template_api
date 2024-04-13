@@ -1,9 +1,13 @@
 <?php
-// src/models/utils/database.php
+// src/models/utils/database.php - (created by: logicinfo.com.br/ael)
 require_once 'src/models/utils/dotEnv.php';
+
+
 class Database {
     private static $instance;
     private $connection;
+
+
 
     private function __construct() {
 
@@ -17,8 +21,12 @@ class Database {
         $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
+
+
     public static function getConnection() {
+
         if (self::$instance === null) {
+            
             self::$instance = new Database();
         }
 
