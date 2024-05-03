@@ -87,24 +87,25 @@ c:\api> php -S localhost:3000
 ### dicas importantes
 vale a pena também configurar ou criar o arquivo .gitgnore (caso ainda não exista na raíz do projeto) e mencionar o arquivo ".env" (é uma boa prática não tornar público as informações de acesso ao banco de dados) caso seja do seu interesse manter o seu projeto em um serviço de controle e armazenamento de código como o github, ou o gitlab (entre outros).
 
-# referências
-- (php)[https://www.php.net/manual/pt_BR/index.php]
-- (vscode)[https://code.visualstudio.com/download]
-- (postman)[https://www.postman.com/downloads/]
-- (insomnia)[https://insomnia.rest/download]
-- (conventional commits)[https://www.conventionalcommits.org/en/v1.0.0/]
+### referências:
+- [php](https://www.php.net/manual/pt_BR/index.php)
+- [vscode](https://code.visualstudio.com/download)
+- [postman](https://www.postman.com/downloads/)
+- [insomnia](https://insomnia.rest/download)
+- [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ### plugins vscode
-- (PHP Debug)[https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug]
-- (PHP Intelephense)[https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client]
-- (PHP Extension Pack)[https://marketplace.visualstudio.com/items?itemName=xdebug.php-pack]
-- (PHP IntelliSense)[https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense]
-- (PHP)[https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode]
-- (live server)[https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer]
-- (prettier - code formatter)[https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode]
-- (eslint)[https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint]
-- (thunder client)[https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client]
-- (mysql)[https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2]
+- [PHP Debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
+- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+- [PHP Extension Pack](https://marketplace.visualstudio.com/items?itemName=xdebug.php-pack)
+- [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense)
+- [PHP](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
+- [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [prettier - code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [thunder client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+- [mysql](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2)
+
 # sobre a logicinfo
 
 somos uma consultoria em T.I. e atuamos com desenvolvimento de aplicações para todos os segumentos e mantemos também uma estrutura de treinamento com as melhores soluções para o aprendizado em programação.
